@@ -116,6 +116,11 @@ jobs:
           name: build-artifact-${{ github.sha }}-${{ github.run_number }}
           path: public
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "1901630240@qq.com"
+          git config --global user.name "SwedishDoveCooker"
+
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
 
