@@ -6,3 +6,6 @@ node_modules
 public
 tmp.*
 .BUILD_FINISHED
+
+*.md
+!README.md
